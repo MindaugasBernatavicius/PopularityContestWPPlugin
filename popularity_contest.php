@@ -82,7 +82,7 @@
     }
     
     if(get_option('pc_plugin_setting_disp_location')['rad'] == 'footer'){
-        add_filter('the_content', 'awepop_show_views');
+        add_filter('the_content', 'awepop_show_views'); // galime taip pat naudoti wp_footer
     } else {
         add_action('wp_head', 'awepop_show_views');
     }
